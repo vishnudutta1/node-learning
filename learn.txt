@@ -5,17 +5,33 @@ in the function it takes two argument one is request and another is response
 refer basic.js
 
 
-node.js is single threaded that is it runs single command at a time.
+--> node.js is single threaded that is it runs single command at a time.
 
-use of a colors npm package see index.js
+---> use of a colors npm package see index.js
 
-we can get npm module by simply running npm install
+--> we can get npm module by simply running npm install
 
-if we dont want to push any file ...we give that file path in .gitignore
+--> if we dont want to push any file ...we give that file path in .gitignore
 
-nodemon package is a time saving module...with this package we dont have to run our server everytime....it runs our project continuosly
+--> nodemon package is a time saving module...with this package we dont have to run our server everytime....it runs our project continuosly
 
-node js is async language thats why it is fast in execution
+--> node js is async language thats why it is fast in execution
+
+To Export any file's data like variable,function and object we write module.export 
+
+--> for example : module.export={
+    x:10,
+    z:function(){
+        return 10
+    }
+}
+
+-->To import that file's data we simply write require with file name
+
+As for example : const app = require('./app')
+
+                console.log(app.z)
+
 
                                     ----------->     making of an static api     <-------------------
 
