@@ -1,0 +1,27 @@
+with the help of http we can create server
+for this we import http and use method http.createServer(function).listen(4500)
+createServer takes function as an argument.
+in the function it takes two argument one is request and another is response
+refer basic.js
+
+
+node.js is single threaded that is it runs single command at a time.
+
+use of a colors npm package see index.js
+
+we can get npm module by simply running npm install
+
+if we dont want to push any file ...we give that file path in .gitignore
+
+nodemon package is a time saving module...with this package we dont have to run our server everytime....it runs our project continuosly
+
+node js is async language thats why it is fast in execution
+
+                                    ----------->     making of an static api     <-------------------
+
+                                    
+
+
+
+ 
+

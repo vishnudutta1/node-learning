@@ -1,0 +1,25 @@
+{
+  "name": "nodelearning",
+  "version": "1.0.0",
+  "description": "node tut",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnudutta1/node-learning.git"
+  },
+  "keywords": [
+    "code"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishnudutta1/node-learning/issues"
+  },
+  "homepage": "https://github.com/vishnudutta1/node-learning#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
