@@ -33,8 +33,50 @@ As for example : const app = require('./app')
                 console.log(app.z)
 
 
+
+---> Question : Difference between global and non global module :
+
+---> Answer the module which we dont need to import is known as global example :console.log()
+ while the module which we need to import is known as non global module example : const fs = require('/fs')
+
+---> To create a file in project
+
+we write ---> fs.writeFileSync('file name',"content")
+Example :   fs.writefileSync('hello.js',"console.log("vishnu)")
+
+Another method : const fs = require('fs').writeFileSync;
+                    fs = ("hello.js","console.log("vishnu)")
+ 
+
+---> To check the directoy of file :
+
+console.log(__dirname)
+
+
+----> To make server 
+
+step 1 --> we import http module:
+
+const http = require('http')
+
+http module basically handle the request and response of the server.
+
+
+--->Question : Why use nodemon?
+Answer: Nodemon is used to run the project continuosly of node js.
+
+
+--> node js is a async language.Due to whic it is fast
+
                                     ----------->     making of an static api     <-------------------
 
+
+--> To create server we import http 
+--> then we use http.createServer to send request and response
+
+example : http.createServer((req,resp)=>{
+    resp.writeHead
+})
                                     
 
 
