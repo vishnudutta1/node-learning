@@ -74,12 +74,37 @@ Answer: Nodemon is used to run the project continuosly of node js.
 --> To create server we import http 
 --> then we use http.createServer to send request and response
 
+---> if we have to send data through api we use response and request is used to receive data or to rceive response
+
 example : http.createServer((req,resp)=>{
-    resp.writeHead
-})
-                                    
+    resp.writeHead(200,{'content-Type':'application\json'});
+    resp.write(JSON.stringify(data)) 
+
+//--> writeHead is used to define the head of api or information about api like status code and content type .It takes two parameter
+//-->//json.stringify will convert all the data into json
+// listen is used to run the code at the given port
+}).listen(5000)
 
 
+code   status
+
+ 200        ok / successful
+ 201        Created
+ 400        bad request
+ 201        Created
+
+
+
+                                Express js
+
+It is a node js framework. 
+
+
+
+
+
+
+ 
 
  
 
