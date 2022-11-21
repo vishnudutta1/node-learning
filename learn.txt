@@ -97,7 +97,11 @@ code   status
 
                                 Express js
 
-It is a node js framework. 
+--> It is a node js framework. 
+--> To make an api through express first we import express.
+--> 
+
+
 
 
 

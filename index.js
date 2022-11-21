@@ -25,23 +25,53 @@
 
 // console.log(app.z())
 
+
+
+
+  // -------------------------------------------------------------------------------------------------------------------------
                     // Express Code
 
 const express = require('express');
 const app = express();
+const Path = require('path')  //require('path') imports path directory library
+const publicPath = Path.join(__dirname,'Public') //path.join is used to provide path to current folder
+console.log(__dirname)  //__dirname is used to find out the path of the current project
+// console.log(publicPath)
+
+app.use(express.static(publicPath))
+
 
 app.get('',(req,res)=>{
-    res.send("welcome this is home page")
+    
+    res.send("welcome this is home page")  // go to home page
+
+   console.log(req.query)  // req.query.name in this req.query is used to accept data as parames at backend. 
+    
+    // if(req.query.name=='vishnu'){
+    //     res.send("welcome to my node js program")
+    // }
+
+
+    // we can also show params data at page
+
+
 })
 
 app.get('/about',(req,res)=>{
-    res.send("welcome this is about page")
+    res.send("welcome this is about page")  // res.send is used to send data to about page 
 })
 
 app.get('/help',(req,res)=>{
-    res.send("welcome this is help page")
+    res.send("welcome this is help page")   //go to help page
 })
 
 app.listen(5000)
 
 
+//---------------------------Now to send html file and without extension--------------------------------------------------------------------------
+
+
+
+app.get('/about',(req,res)=>{
+    res.sendFile("welcome this is about page")  // res.send is used to send data to about page 
+})

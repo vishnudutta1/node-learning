@@ -21,6 +21,7 @@
   "homepage": "https://github.com/vishnudutta1/node-learning#readme",
   "dependencies": {
     "colors": "^1.4.0",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
     "nodemon": "^2.0.20"
   }
